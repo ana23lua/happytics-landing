@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Happytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #b0add3;
+      --purple-dark: #757297;
+      --light: #e9e8f0;
+      --dark: #2e2e2e;
+      --white: #ffffff;
+      --font: 'Outfit', sans-serif;
+    }
+    body { font-family: var(--font); background: var(--light); color: var(--dark); }
+    header {
+      background: var(--dark);
+      border-radius: 0 0 40px 40px;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    header h1 { color: var(--white); font-size: clamp(24px, 6vw, 40px); font-weight: 800; letter-spacing: 0.18em; }
+    header p { color: rgba(255,255,255,0.55); font-size: 14px; margin-top: 8px; letter-spacing: 0.06em; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+    h2 { font-size: clamp(16px, 4vw, 22px); font-weight: 700; color: var(--purple-dark); letter-spacing: 0.1em; margin-top: 40px; margin-bottom: 12px; }
+    p, li { font-size: clamp(14px, 3vw, 16px); line-height: 1.75; color: #444; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    .contact-card {
+      background: var(--dark);
+      border-radius: 24px;
+      padding: 32px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .contact-card p { color: rgba(255,255,255,0.7); margin-bottom: 16px; }
+    .contact-card a {
+      display: inline-block;
+      background: var(--purple);
+      color: var(--dark);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 14px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: clamp(14px, 3vw, 16px);
+    }
+    footer { background: var(--dark); color: rgba(255,255,255,0.5); text-align: center; padding: 24px; font-size: 13px; letter-spacing: 0.08em; }
+    footer a { color: var(--purple); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Support</h1>
+    <p>We're here to help.</p>
+  </header>
+  <main>
+    <h2>Frequently Asked Questions</h2>
+
+    <h2>How do I connect my Apple Watch?</h2>
+    <p>Open the Happytics app on your iPhone, go to Settings, and make sure Apple Watch sync is enabled. The Watch app will install automatically if you have it paired.</p>
+
+    <h2>How do I cancel my subscription?</h2>
+    <p>You can manage or cancel your subscription at any time through the App Store:</p>
+    <ul>
+      <li>Open the Settings app on your iPhone</li>
+      <li>Tap your name → Subscriptions</li>
+      <li>Select Happytics and choose Cancel Subscription</li>
+    </ul>
+
+    <h2>How do I delete my data?</h2>
+    <p>You can delete all your personal data by going to Settings inside the app and tapping "Delete my account". You can also contact us directly and we'll handle it for you.</p>
+
+    <h2>The app is not reading my heart rate. What do I do?</h2>
+    <p>Make sure you have granted Happytics access to HealthKit. Go to iPhone Settings → Health → Data Access & Devices → Happytics and enable Heart Rate access.</p>
+
+    <div class="contact-card">
+      <p>Can't find what you're looking for? Reach out to us directly.</p>
+      <a href="mailto:happyticstudio@gmail.com">happyticstudio@gmail.com</a>
+    </div>
+  </main>
+  <footer>
+    <p>© 2026 Happytics Studios &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
