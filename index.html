@@ -21,17 +21,12 @@
     }
 
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font);
-      background: var(--purple);
-      overflow-x: hidden;
-    }
+    body { font-family: var(--font); background: var(--purple); overflow-x: hidden; }
 
     /* ── HERO ── */
     #hero {
       background: var(--purple);
-      padding: 48px 24px 0;
+      padding: 48px 24px 56px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -41,25 +36,16 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
-    .logo-icon {
-      width: 38px;
-      height: 38px;
-    }
-    .logo-text {
-      display: flex;
-      align-items: baseline;
-      gap: 0;
-    }
-    .logo-happy {
-      height: 28px;
-    }
+    .logo-icon { width: 36px; height: 36px; }
+    .logo-text { display: flex; align-items: baseline; }
+    .logo-happy { height: 26px; }
     .logo-tics {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 400;
       color: var(--cream);
-      letter-spacing: 0.15em;
+      letter-spacing: 0.2em;
     }
 
     .divider {
@@ -96,13 +82,13 @@
       text-align: center;
       line-height: 1.7;
       max-width: 480px;
-      margin: 0 auto 0;
+      margin: 0 auto;
     }
 
     /* ── WAITLIST ── */
     #waitlist {
       background: var(--dark);
-      padding: 52px 24px;
+      padding: 56px 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -161,29 +147,10 @@
       width: 100%;
     }
 
-    /* ── PHONE MOCKUP ── */
-    .phone-overlap {
-      background: var(--dark);
-      display: flex;
-      justify-content: center;
-      padding-bottom: 0;
-      position: relative;
-    }
-    .phone-overlap img {
-      width: 80%;
-      max-width: 360px;
-      display: block;
-      border-radius: 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-      position: relative;
-      z-index: 2;
-      margin-bottom: -60px;
-    }
-
     /* ── QUESTION ── */
     #question {
       background: var(--light);
-      padding: 100px 24px 60px;
+      padding: 64px 24px 64px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -201,7 +168,7 @@
     }
 
     .question-headline {
-      font-size: clamp(24px, 6vw, 40px);
+      font-size: clamp(24px, 6vw, 42px);
       font-weight: 800;
       color: var(--purple-dark);
       letter-spacing: 0.13em;
@@ -216,34 +183,8 @@
       color: #444;
       letter-spacing: 0.1em;
       text-align: center;
-      margin-bottom: 48px;
     }
-    .question-answer strong {
-      font-weight: 700;
-    }
-
-    .devices {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 0;
-      width: 100%;
-      max-width: 500px;
-      position: relative;
-    }
-    .devices .watch-img {
-      width: 42%;
-      margin-right: -8%;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 12px 28px rgba(60,55,101,0.3));
-      z-index: 1;
-    }
-    .devices .phone-img {
-      width: 56%;
-      border-radius: 28px;
-      box-shadow: 0 20px 50px rgba(60,55,101,0.3);
-      z-index: 2;
-    }
+    .question-answer strong { font-weight: 700; }
 
     /* ── DATA ── */
     #data {
@@ -270,29 +211,6 @@
       color: var(--purple-dark);
       letter-spacing: 0.13em;
       text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .data-devices {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 0;
-      width: 100%;
-      max-width: 500px;
-    }
-    .data-devices .watch-img {
-      width: 44%;
-      margin-right: -10%;
-      margin-top: 40px;
-      filter: drop-shadow(0 12px 28px rgba(60,55,101,0.3));
-      z-index: 1;
-    }
-    .data-devices .phone-img {
-      width: 58%;
-      border-radius: 28px;
-      box-shadow: 0 20px 50px rgba(60,55,101,0.35);
-      z-index: 2;
     }
 
     /* ── FOOTER ── */
@@ -322,7 +240,6 @@
 
   <!-- ══ HERO ══ -->
   <section id="hero">
-
     <div class="logo reveal">
       <img class="logo-icon" src="https://www.figma.com/api/mcp/asset/18e69dba-6a61-43ca-b1d5-9524d3cdc34a" alt="Happytics logo icon" />
       <div class="logo-text">
@@ -342,7 +259,6 @@
       An app for iPhone and Apple Watch designed to empower your <strong>self-regulation</strong>
       and self-awareness through sensory fidget toys, personal notes and heart metrics.
     </p>
-
   </section>
 
   <!-- ══ WAITLIST ══ -->
@@ -358,14 +274,8 @@
     </form>
   </section>
 
-  <!-- ══ PHONE OVERLAP ══ -->
-  <div class="phone-overlap">
-    <img src="https://www.figma.com/api/mcp/asset/7082664b-71f6-451d-95e9-43c36b7705d7" alt="Happytics app on iPhone" class="reveal" />
-  </div>
-
   <!-- ══ QUESTION ══ -->
   <section id="question">
-
     <div class="smiley-circle reveal">
       <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
         <path d="M24 30 Q27 26 30 30" stroke="#757297" stroke-width="4" stroke-linecap="round" fill="none"/>
@@ -373,26 +283,14 @@
         <path d="M26 50 Q40 62 54 50" stroke="#757297" stroke-width="4" stroke-linecap="round" fill="none"/>
       </svg>
     </div>
-
     <h2 class="question-headline reveal">Does fidgeting actually calm you down?</h2>
     <p class="question-answer reveal">Now you can <strong>see the answer.</strong></p>
-
-    <div class="devices reveal">
-      <img class="watch-img" src="https://www.figma.com/api/mcp/asset/23880fcc-dd27-4c79-8b69-2973eb1966d8" alt="Apple Watch with Happytics" />
-      <img class="phone-img" src="https://www.figma.com/api/mcp/asset/efcc9b46-127a-4a6a-817e-4ff99fe4a27f" alt="Happytics data screen" />
-    </div>
-
   </section>
 
   <!-- ══ DATA ══ -->
   <section id="data">
     <h2 class="data-headline reveal">Understand your mind &amp; body.</h2>
     <p class="data-sub reveal">Reports by day, week &amp; month</p>
-
-    <div class="data-devices reveal">
-      <img class="watch-img" src="https://www.figma.com/api/mcp/asset/23880fcc-dd27-4c79-8b69-2973eb1966d8" alt="Apple Watch" />
-      <img class="phone-img" src="https://www.figma.com/api/mcp/asset/efcc9b46-127a-4a6a-817e-4ff99fe4a27f" alt="Happytics data reports" />
-    </div>
   </section>
 
   <!-- ══ FOOTER ══ -->
